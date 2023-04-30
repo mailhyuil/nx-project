@@ -15,4 +15,12 @@ model User{
   password String
   realname String
   email String?
+  posts Post[]
+}
+model Post{
+  id Int @id @default(autoincrement())
+  title String
+  content String
+  user User @relation(fields: [userId], references: [id])
+  userId String
 }
