@@ -3,9 +3,16 @@ import { RouterModule } from '@angular/router';
 import { ModalComponent } from './modal/modal.component';
 import { ButtonComponent } from './button/button.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AnimationComponent } from './animation/animation.component';
 @Component({
   standalone: true,
-  imports: [RouterModule, ModalComponent, ButtonComponent, HttpClientModule],
+  imports: [
+    RouterModule,
+    ModalComponent,
+    ButtonComponent,
+    HttpClientModule,
+    AnimationComponent,
+  ],
   selector: 'nx-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
